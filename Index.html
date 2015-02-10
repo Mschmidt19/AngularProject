@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <!-- <link rel="stylesheet" href="css/semantic.css">
+    <script src="js/semantic.js"></script>-->
+    <script src = "InventoryProject.js"></script>
+    <title>Marek's Online Game Shop</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color: #FFFFFF" >Marek's Online Game Shop</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <h2 id="GameGenres" style="font-family: pacificoregular; color: #0c97e2"><a href="./index.html">Game Genres</a></h2>
+
+                <div class="blankSpace"></div>
+
+                <!-- Start css3menu.com BODY section -->
+                <input type="checkbox" id="css3menu-switcher" class="c3m-switch-input">
+                <ul id="css3menu1" class="topmenu">
+                    <li class="switch"><label onclick="" for="css3menu-switcher"></label></li>
+                    <li class="topfirst"><a id = "MOBACategorySideNav" href="./categoryGameIndex.html" style="width:170px;"><span><img src="./images/blue-arrow2 right.png" alt="">MOBA</span></a>
+                        <ul>
+                            <li><a id ="LoLSideNav" href="./individualGameIndex.html">League of Legends</a></li>
+                            <li><a id ="DOTA2SideNav" href="./individualGameIndex.html">DOTA 2</a></li>
+                            <li><a id ="HoNSideNav" href="./individualGameIndex.html">Heroes of Newerth</a></li>
+                            <li><a id ="HotSSideNav" href="./individualGameIndex.html">Heroes of the Storm</a></li>
+                        </ul></li>
+                    <li class="topmenu"><a id = "StrategyCategorySideNav" href="./categoryGameIndex.html" style="width:170px;"><span><img src="./images/blue-arrow2 right.png" alt="">Strategy</span></a>
+                        <ul>
+                            <li><a id ="SCIISideNav" href="./individualGameIndex.html">StarCraft II</a></li>
+                            <li><a id ="WarcraftIIISideNav" href="./individualGameIndex.html">Warcraft III</a></li>
+                            <li><a id ="CnC4SideNav" href="./individualGameIndex.html">Command and Conquer 4</a></li>
+                        </ul></li>
+                    <li class="topmenu"><a id = "MMORPGCategorySideNav" href="./categoryGameIndex.html" style="width:170px;"><span><img src="./images/blue-arrow2 right.png" alt="">MMORPG</span></a>
+                        <ul>
+                            <li><a id ="WoWSideNav" href="./individualGameIndex.html">World of Warcraft</a></li>
+                            <li><a id ="RunescapeSideNav" href="./individualGameIndex.html">Runescape</a></li>
+                            <li><a id ="WildStarSideNav" href="./individualGameIndex.html">WildStar</a></li>
+                            <li><a id ="ESOSideNav" href="./individualGameIndex.html">Elder Scrolls Online</a></li>
+                        </ul></li>
+                    <li class="topmenu"><a id = "RPGCategorySideNav" href="./categoryGameIndex.html" style="width:170px;"><span><img src="./images/blue-arrow2 right.png" alt="">RPG </span></a>
+                        <ul>
+                            <li><a id ="SkyrimSideNav" href="./individualGameIndex.html">The Elder Scrolls V: Skyrim</a></li>
+                            <li><a id ="DAISideNav" href="./individualGameIndex.html">Dragon Age: Inquisition</a></li>
+                            <li><a id ="DarkSoulsIISideNav" href="./individualGameIndex.html">Dark Souls II</a></li>
+                            <li><a id ="DiabloIIISideNav" href="./individualGameIndex.html">Diablo III</a></li>
+                            <li><a id ="ME3SideNav" href="./individualGameIndex.html">Mass Effect 3</a></li>
+                        </ul></li>
+                    <li class="topmenu"><a id = "Action_AdventureCategorySideNav" href="./categoryGameIndex.html" style="width:170px;"><span><img src="./images/blue-arrow2 right.png" alt="">Action &amp; Adventure</span></a>
+                        <ul>
+                            <li><a id ="GTAVSideNav" href="./individualGameIndex.html">Grand Theft Auto V</a></li>
+                            <li><a id ="DayZSideNav" href="./individualGameIndex.html">DayZ</a></li>
+                            <li><a id ="BioShockSideNav" href="./individualGameIndex.html">BioShock: Infinite</a></li>
+                            <li><a id ="MagickaSideNav" href="./individualGameIndex.html">Magicka</a></li>
+                        </ul></li>
+                    <li class="topmenu"><a id = "ShooterCategorySideNav" href="./categoryGameIndex.html" style="width:170px;"><span><img src="./images/blue-arrow2 right.png" alt="">Shooter</span></a>
+                        <ul>
+                            <li><a id ="TF2SideNav" href="./individualGameIndex.html">Team Fortress 2</a></li>
+                            <li><a id ="CoDSideNav" href="./individualGameIndex.html">Call of Duty: Advanced Warfare</a></li>
+                            <li><a id ="BF4SideNav" href="./individualGameIndex.html">Battlefield 4</a></li>
+                        </ul></li>
+                    <li class="topmenu"><a id = "IndieCategorySideNav" href="./categoryGameIndex.html" style="width:170px;"><span><img src="./images/blue-arrow2 right.png" alt="">Indie</span></a>
+                        <ul>
+                            <li><a id ="BroforceSideNav" href="./individualGameIndex.html">Broforce</a></li>
+                            <li><a id ="HotlineMiamiSideNav" href="./individualGameIndex.html">Hotline Miami</a></li>
+                            <li><a id ="DivekickSideNav" href="./individualGameIndex.html">Divekick</a></li>
+                        </ul></li>
+                    <li class="topmenu"><a id = "Sports_RacingCategorySideNav" href="./categoryGameIndex.html" style="width:170px;"><span><img src="./images/blue-arrow2 right.png" alt="">Sports &amp; Racing</span></a>
+                        <ul>
+                            <li><a id ="FIFA15SideNav" href="./individualGameIndex.html">FIFA 15</a></li>
+                            <li><a id ="SpeedRunnersSideNav" href="./individualGameIndex.html">SpeedRunners</a></li>
+                            <li><a id ="F12013SideNav" href="./individualGameIndex.html">F1 2013</a></li>
+                            <li><a id ="NBA2K15SideNav" href="./individualGameIndex.html">NBA 2K15</a></li>
+                        </ul></li>
+                    <li class="toplast"><a id = "SimulationCategorySideNav" href="./categoryGameIndex.html" style="width:170px;"><span><img src="./images/blue-arrow2 right.png" alt="">Simulation</span></a>
+                        <ul>
+                            <li><a id ="Arma3SideNav" href="./individualGameIndex.html">Arma 3</a></li>
+                            <li><a id ="RCT3SideNav" href="./individualGameIndex.html">RollerCoaster Tycoon 3</a></li>
+                            <li><a id ="GoatSimulatorSideNav" href="./individualGameIndex.html">Goat Simulator</a></li>
+                        </ul></li>
+                    <!-- End css3menu.com BODY section -->
+
+
+
+
+            </div>
+
+
+
+            <div class="col-md-9">
+
+                <h1 id="FeaturedGames" style="font-family: pacificoregular; color: #0c97e2; text-align: center">Featured Games</h1>
+
+                <div class="blankSpace"></div>
+
+                <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="./images/leagueoflegendslarge.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="./images/gta5large.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img  class="slide-image" src="./images/hotlinemiamilarge.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <h3 id="SpecialSales" style="font-family: pacificoregular; color: #0c97e2; text-align: center">Special Sales!</h3>
+
+                    <div class="blankSpace"></div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="./images/dota2small.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$24.99</h4>
+                                <h4><a href="#">DOTA 2</a>
+                                </h4>
+                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="./images/starcraftsmall.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$64.99</h4>
+                                <h4><a href="#">StarCraft II</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">12 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="./images/wildstarsmall.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$74.99</h4>
+                                <h4><a href="#">WildStar</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="./images/bf4small.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$84.99</h4>
+                                <h4><a href="#">Battlefield 4</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">6 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="./images/fifasmall.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$94.99</h4>
+                                <h4><a href="#">FIFA 15</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">18 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="./images/goatsimulatorsmall.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$8.99</h4>
+                                <h4><a href="#">Goat Simulator</a>
+                                </h4>
+                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">11 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Marek Schmidt 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+<!--    <script src="js/jquery.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+
+    <!-- Bootstrap
+    Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src='script.js'></script>
+
+
+
+</body>
+
+</html>
