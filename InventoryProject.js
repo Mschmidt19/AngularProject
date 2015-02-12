@@ -2025,7 +2025,7 @@ darksouls.thumbnail ='images/darksouls2small.png';
 darksouls.banner = 'images/darksouls2large.jpg';
 darksouls.addGameToCategory();
 var d3 = new RPG('Diablo III', 39.99, 'Blizzard Entertainment', true, true, true, true);
-d3.description = 'No One Can Stop Death...The lords of hell rage within the Black Soulstone, their souls screaming for vengeance and release. Before the artifact can be sealed away forever, Malthael-Angel of Deathmanifests in the mortal realms with a deadly new purpose: to steal the ';
+d3.description = 'No One Can Stop Death...The lords of hell rage within the Black Soulstone, their souls screaming for vengeance and release. Before the artifact can be sealed away forever, Malthael-Angel of Deathmanifests in the mortal realms with a deadly new purpose: to steal the Black Soulstone and bend its infernal power to his will.';
 d3.thumbnail ='images/diablo3small.jpg';
 d3.banner = 'images/diablo3large.jpg';
 d3.addGameToCategory();
